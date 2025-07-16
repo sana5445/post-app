@@ -4,31 +4,26 @@ import { Link } from 'react-router-dom'
 const PostNavbar = () => {
   return (
     <div>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Home</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <Link class="nav-link active" aria-current="page" TO="/">Add Post</Link>
-        </li>
-        <li class="nav-item">
-          <Link class="nav-link" to="/search">Search Post</Link>
-        </li>
-        <li class="nav-item">
-          <Link class="nav-link" to="/delete">Delete Post</Link>
-        </li>
-        <li class="nav-item">
-          <Link class="nav-link" to="/view">ViewALL Post</Link>
-        </li>
-      </ul>
+      <nav className="navbar" style={{ backgroundColor: 'brown' }}>
+        <div className="container-fluid">
+          <a className="navbar-brand text-white fw-bold" href="#">Post App</a>
+          <ul className="navbar-nav d-flex flex-row gap-3">
+            <li className="nav-item">
+              <Link className="nav-link text-white" to="/">Add Post</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link text-white" to="/search">Search Post</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link text-white" to="/delete">Delete Post</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link text-white" to="/view">ViewALL Post</Link>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </div>
-  </div>
-</nav>
-       </div>
   )
 }
 
